@@ -26,3 +26,91 @@
         </div>
     </div>
 </div>
+
+<div class="section clearfix">
+    <div class="inner clearfix">
+        <div class="heading">
+            THE SOLUTION
+        </div>
+        <div class="content">
+            <p>Ad networks need to simply set <code>wmode</code> to<br/>
+            <code>“transparent”</code> or <code>“opaque”</code> on flash embeds.</p>
+            <p class="see_example"><a href="javascript:void(0)">See an example of how easy this is &rarr;</a></p>
+            <div class="easy" style="display:none">
+                <p>In the following object embed, the needed <code>wmode</code> params are highlighted in red.</p>
+                <code class="block">
+                    &lt;object&gt;<br/>
+                      &nbsp;&nbsp;&nbsp;&lt;param name=&quot;movie&quot; value=&quot;http://example.com/movie&quot;&gt;<br/>
+                      &nbsp;&nbsp;&nbsp;<strong>&lt;param name=&quot;wmode&quot; value=&quot;transparent&quot;&gt;</strong><br/>
+                      &nbsp;&nbsp;&nbsp;&lt;embed src=&quot;http://example.com/movie&quot; <strong>wmode=&quot;transparent&quot;</strong>&gt;<br/>
+                    &lt;/object&gt;
+                </code>
+            </div>
+            <% jsblock do %>
+                $('.see_example a').toggle(function() {
+                    $('.easy').slideDown();
+                }, function() {
+                    $('.easy').slideUp();
+                });
+            <% end %>
+        </div>
+    </div>
+</div>
+
+<div class="section clearfix">
+    <div class="inner clearfix">
+        <div class="heading">
+            SPREAD THE WORD
+        </div>
+        <div class="content">
+            <p>With more awareness, we can push
+            ad networks to fix this issue.</p>
+            <div class="share_promo">
+                <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.flashadsbreaktheweb.com/" data-text="Flash ads break the web. Ad networks need to fix them. Here's how:" data-count="vertical" data-via="jamesjyu">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+                <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.flashadsbreaktheweb.com%2F&amp;layout=box_count&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:70px; height:65px;" allowTransparency="true"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section clearfix">
+    <div class="inner clearfix">
+        <div class="heading">
+            THE DETAILS
+        </div>
+        <div class="content">
+            <p>It’s all about <code>wmode</code>, a parameter that specifies
+            how a flash object is rendered on a webpage.</p>
+
+            <p><code>wmode</code> needs to be explicitly set to <code>opaque</code>
+            or <code>transparent</code>. If it is not, no elements on the
+            webpage can go above the flash. EVER.</p>
+
+            <p>This is easy when you own the flash content,
+            which is not the case for Flash Ads.</p>
+            
+            <p>If the Flash Ad is not in an iframe. You can 
+            use FlashHeed to fix it.</p>
+        </div>
+    </div>
+</div>
+
+<div class="section clearfix">
+    <div class="inner clearfix">
+        <div class="heading">
+            ABOUT
+        </div>
+        <div class="content">
+            <p>This site was created by <a href="http://www.twitter.com/jamesjyu">James Yu</a>, a web developer
+            and designer who is tired of Flash Ads breaking the web.</p>
+
+            <p>He wrote <a href="https://github.com/scribd/flash_heed">FlashHeed</a> to solve part of the problem
+            for use at Scribd, and released it so other sites could
+            fix some of their Flash Ads.</p>
+
+            <p>You can follow him at <a href="http://www.twitter.com/jamesjyu">@jamesjyu</a>.</p>
+        </div>
+    </div>
+</div>
+
+

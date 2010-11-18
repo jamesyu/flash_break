@@ -10,6 +10,22 @@ body {
     text-align: center;
 }
 
+a {
+    color: #222;
+    background: #3B86C1;
+    text-decoration: none;
+    padding: 2px 4px;
+    -webkit-border-radius: 3px;
+    
+    :visited {
+        color: #222;
+    }
+    :hover {
+        color: #fff;
+        background: #2B6EBA;
+    }
+}
+
 h1 {
     font-size: 25px;
 }
@@ -21,9 +37,23 @@ h3 {
     text-shadow: 1px 1px 1px #fff;
 }
 
+p {
+    margin: 0 auto 15px auto;
+}
+
 header {
     margin: 0 auto 45px auto;
     padding-top: 45px;
+    
+    a {
+        background: none;
+        -webkit-border-radius: 2px;
+        display: inline-block;
+        
+        :hover {
+            background: none;
+        }
+    }
     
     img {
         
@@ -49,6 +79,9 @@ header {
     background: url(/images/section_back.gif);
     padding: 20px 0 20px 0;
     margin-bottom: 25px;
+    -moz-box-shadow: 0px 0px 4px #3378B7; 
+    -webkit-box-shadow: 0px 0px 4px #3378B7; 
+    box-shadow: 0px 0px 4px #3378B7;
     
     .inner {
         width: 950px;
@@ -56,6 +89,7 @@ header {
     }
     
     .heading {
+        margin-top: -6px;
         color: #18489E;
         text-align: right;
         font-size: 55px;
@@ -63,6 +97,7 @@ header {
         text-shadow: 1px 1px 1px #fff;
         float: left;
         width: 350px;
+        line-height: 65px;
     }
     
     .content {
@@ -93,5 +128,43 @@ header {
         .last {
             margin-bottom: 0;
         }
+    }
+}
+
+p.see_example {
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+code.block {
+    font-size: 12px;
+    display: block;
+    background: #A0DDFF;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 10px;
+    -moz-box-shadow: 0px 0px 4px #3378B7; 
+    -webkit-box-shadow: 0px 0px 4px #3378B7; 
+    box-shadow: 0px 0px 4px #3378B7;
+    
+    strong {
+        color: #ff0000;
+    }
+}
+
+.share_promo {
+    background: #A0DDFF;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 20px 10px 10px 30px;
+    -moz-box-shadow: 0px 0px 4px #3378B7; 
+    -webkit-box-shadow: 0px 0px 4px #3378B7; 
+    box-shadow: 0px 0px 4px #3378B7;
+    width: 150px;
+    
+    .twitter-share-button {
+        margin-right: 15px;
+        position: relative;
+        top: -4px;
     }
 }
