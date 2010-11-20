@@ -1,5 +1,5 @@
 <div class="screenshot">
-    <%= image_tag screenshot.image.url(:medium) %>
+    <%= link_to image_tag(screenshot.image.url(:medium)), screenshot.image.url(:large), :class => 'screenshot_img' %>
     <p>
         <% if screenshot.twitter.blank? %>
             Spotted on

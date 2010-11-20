@@ -4,3 +4,9 @@
         <%= render :partial => 'screenshots', :locals => { :screenshots => @screenshots, :show_admin => false } %>
     <% end %>
 </div>
+
+<% jsblock do %>
+   $(function() {
+       $('.screenshot .screenshot_img').fancybox();
+   });
+<% end %>
