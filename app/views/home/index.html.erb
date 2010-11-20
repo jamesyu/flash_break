@@ -75,24 +75,44 @@
 
 <div class="section clearfix">
     <div class="inner clearfix">
-        <div class="heading">
-            THE DETAILS
-        </div>
-        <div class="content">
-            <p>It’s all about <code>wmode</code>, a parameter that specifies
-            how a flash object is rendered on a webpage.</p>
+        <div class="clearfix">
+            <div class="heading">
+                THE DETAILS
+            </div>
+            <div class="content">
+                <p>It’s all about <code>wmode</code>, a parameter that specifies
+                how a flash object is rendered on a webpage.</p>
 
-            <p><code>wmode</code> needs to be explicitly set to <code>opaque</code>
-            or <code>transparent</code>. If it is not, no elements on the
-            webpage can go above the flash. EVER.</p>
+                <p><code>wmode</code> needs to be explicitly set to <code>opaque</code>
+                or <code>transparent</code>. If it is not, no elements on the
+                webpage can go above the flash. <strong>EVER</strong>.</p>
 
-            <p>This is easy when you own the flash content,
-            which is not the case for Flash Ads.</p>
+                <p>This is easy when you own the flash content,
+                which is not the case for Flash Ads.</p>
             
-            <p>If the Flash Ad is not in an iframe. You can 
-            use FlashHeed to fix it.</p>
+                <p>If the Flash Ad is not in an iframe. You can 
+                use <a href="http://www.github.com/scribd/flash_heed">FlashHeed</a> to fix it.</p>
+            </div>
         </div>
     </div>
+        
+    <div class="alert">If the Flash Ad is in an iframe, THERE IS NO FIX*.</div>
+    
+    <div class="breakout">
+        <small>* Unless the iframe is on a domain you control, or the correct wmode parameter
+        is already set. But, this is most likely not the case for most ad networks.</small>
+        
+        <p class="q">WAIT, WHAT?! There is no fix??</p>
+        <p class="a">Yep, that's right</p>
+        
+        <p class="q">So, I have to redesign my website’s
+        UI in order to avoid this problem?</p>
+        <p class="a">Yep, <a href="http://adsense.blogspot.com/2007/05/clarification-on-accidental-clicks.html">Google even suggests this.</a> This is ludicrous in the 21st century web, which is brimming with dynamic overlaying UI elements. Google cannot expect site owners to redesign their site to accommodate these lazy Flash issues.</p>
+        
+        <p class="q">I heard that setting <code>wmode</code> to anything other than <code>window</code> causes performance issues.</p>
+        <p class="a">Yes, that is true. However, we're talking about small simple Flash embeds, not fullscreen games with heavy animations. The average consumer these days have machines that are fast enough that Flash ads won't be a performance issue.</p>
+    </div>
+
 </div>
 
 <div class="section clearfix">
