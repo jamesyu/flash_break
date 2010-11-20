@@ -1,0 +1,5 @@
+<div class="wrap">
+    <% unless @screenshots.empty? %>
+        <%= render :partial => 'screenshots', :locals => { :screenshots => @screenshots, :show_admin => true } %>
+    <% end %>
+</div>

@@ -1,0 +1,6 @@
+<div class="wrap">
+    <h3 class="center">Screenshots of Broken Flash Ads</h1>
+    <% unless @screenshots.empty? %>
+        <%= render :partial => 'screenshots', :locals => { :screenshots => @screenshots, :show_admin => false } %>
+    <% end %>
+</div>

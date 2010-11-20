@@ -1,0 +1,132 @@
+@import "globals.less";
+
+.p_home {
+
+    .section {
+        background: url(/images/section_back.gif);
+        padding: 20px 0 20px 0;
+        margin-bottom: 25px;
+        .box_shadow;
+
+        .inner {
+            width: 950px;
+            margin: auto;
+        }
+
+        small {
+            display: block;
+            font-size: 13px;
+            margin-bottom: 25px;
+        }
+
+        .breakout {
+            width: 550px;
+            margin: auto;
+            text-align: left;
+
+            .q {
+                font-size: 25px;
+                color: #0E3F73;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            .a {
+                margin-top: 0;
+                font-size: 18px;
+                margin-bottom: 25px;
+            }
+        }
+
+        .heading {
+            margin-top: -6px;
+            color: #18489E;
+            text-align: right;
+            font-size: 55px;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px #fff;
+            float: left;
+            width: 350px;
+            line-height: 65px;
+        }
+
+        .content {
+            text-align: left;
+            float: right;
+            width: 550px;
+            font-size: 24px;
+            color: #333;
+
+            .bullet {
+                margin-bottom: 10px;
+
+                span {
+                    float: left;
+                    background: transparent url(/images/circle.png) no-repeat top left;
+                    font-size: 25px;
+                    color: #fff;
+                    width: 36px;
+                    height: 36px;
+                    padding: 3px 0 0 11px;
+                }
+                div {
+                    padding-top: 4px;
+                    padding-left: 45px;
+                }
+            }
+
+            .last {
+                margin-bottom: 0;
+            }
+        }
+
+    }
+
+    p.see_example {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+
+    code {
+        color: #18489E;
+        font-weight: bold;
+    }
+
+    code.block {
+        font-size: 12px;
+        display: block;
+        background: #A0DDFF;
+        padding: 10px;
+        .rounded_corners(10px);
+        .box_shadow;
+
+        strong {
+            color: #ff0000;
+        }
+    }
+
+    .share_promo {
+        background: #A0DDFF;
+        padding: 20px 10px 10px 30px;
+        width: 150px;
+        .rounded_corners(10px);
+        .box_shadow;
+
+        .twitter-share-button {
+            margin-right: 15px;
+            position: relative;
+            top: -4px;
+        }
+    }
+
+    .alert {
+        background: #FF0000;
+        color: #fff;
+        padding: 25px 0 25px 0;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 25px auto 25px auto;
+    }
+
+}

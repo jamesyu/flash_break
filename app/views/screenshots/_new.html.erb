@@ -1,0 +1,13 @@
+<%= error_messages_for 'screenshot' %>
+
+<% form_for :screenshot, screenshot, :url => screenshots_url, :html => { :multipart => true, :class => 'upload_screenshot' } do |form| %>
+    <%= form.file_field :image %>
+    <%= form.text_field :url %>
+    <%= form.text_field :twitter %>
+    <button>Submit</button>
+<% end %>
+
+<% jsblock do %>
+    $('#screenshot_url').watermark('URL (required)');
+    $('#screenshot_twitter').watermark('Twitter Handle (optional)');
+<% end %>

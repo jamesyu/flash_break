@@ -1,0 +1,11 @@
+<div class="screenshot">
+    <%= image_tag screenshot.image.url(:medium) %>
+    <p>
+        <% if screenshot.twitter.blank? %>
+            Spotted on
+        <% else %>
+            Spotted by <%= link_to h(screenshot.twitter), screenshot.twitter_url %> on
+        <% end %>
+        <%= link_to h(screenshot.domain), screenshot.url %>
+    </p>
+</div>

@@ -1,0 +1,64 @@
+@import "globals.less";
+
+.screenshot {
+    img {
+        .box_shadow;
+    }
+}
+
+.p_screenshots {
+    table {
+        margin-top: 25px;
+        tr {
+            td {
+                padding: 15px;
+                width: 201px;
+                text-align: center;
+                font-size: 12px;
+                
+                p {
+                    margin-top: 6px;
+                }
+
+                a {
+                    padding: 0;
+                    background: transparent;
+                    color: #18489E;
+                    text-shadow: 1px 1px 1px #AAB0D6;
+                }
+            }
+        }
+    }
+}
+
+.upload_screenshot {
+    input[type=file] {
+        margin: 10px auto 10px auto;
+    }
+    input[type=text] {
+        font-size: 18px;
+        padding: 5px;
+        width: 400px;
+        margin: 10px auto 10px auto;
+        border: 0;
+        .box_shadow;
+        .rounded_corners(5px);
+    }
+    input.watermark {
+        color: #888;
+    }
+    button {
+        display: block;
+        font-size: 18px;
+        margin: 10px auto 10px auto;
+        background: #18489E;
+        color: #fff;
+        border: 0;
+        .rounded_corners(5px);
+        padding: 5px 10px 5px 10px;
+        
+        :hover {
+            background: #000;
+        }
+    }
+}

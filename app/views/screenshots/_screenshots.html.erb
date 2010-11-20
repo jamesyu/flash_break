@@ -1,0 +1,18 @@
+<table>
+    <% screenshots.in_groups_of(3).each do |row| %>
+        <tr>
+            <% row.each do |screenshot| %>
+                <% if screenshot %>
+                    <td>
+                        <%= render screenshot %>
+                        <% if show_admin %>
+                            <%= link_to 'Approve', approve_screenshot_url(screenshot, :secret => 'flashsuckz'), :method => :post %>
+                        <% end %>
+                    </td>
+                <% else %>
+                    <td>&nbsp;</td>
+                <% end %>
+            <% end %>
+        </tr>
+    <% end %>
+</table>

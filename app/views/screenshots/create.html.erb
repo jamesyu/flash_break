@@ -1,0 +1,14 @@
+<div class="wrap">
+    <% if @screenshot.valid? %>
+        <h1>Thanks for uploading</h1>
+
+        <p>
+            We approve screenshots to make sure they contain 
+            an actual case where Flash Ads break
+            site layouts. After we've had a chance to review, 
+            they'll go up in the <%= link_to 'gallery', screenshots_url %>
+        </p>
+    <% else %>
+        <%= render :partial => 'screenshots/new', :locals => { :screenshot => @screenshot } %>
+    <% end %>
+</div>
