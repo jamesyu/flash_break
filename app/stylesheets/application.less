@@ -63,19 +63,50 @@ p {
 header {
     margin: 0 auto 45px auto;
     padding-top: 45px;
+    position: relative;
     
     a {
+        float: left;
+        position: relative;
+        display: inline-block;
         background: none;
         -webkit-border-radius: 2px;
-        display: inline-block;
+        margin-right: 25px;
         
         :hover {
             background: none;
         }
     }
     
-    img {
+    .inner {
+        width: 537px;
+        margin: auto;
+        position: relative;
+        left: 100px;
+    }
+    
+    .spread {
+        position: relative;
+        right: 0;
+        margin-top: 5px;
+        display: inline-block;
+        float: left;
+        width: 160px;
+        padding: 25px 15px 25px 15px;
+        text-align: center;
+        background: url(/images/spread.png) no-repeat 0 0;
         
+        h3 {
+            font-size: 14px;
+        }
+        
+        iframe {
+            position: relative;
+            left: 7px;
+            display: block;
+            width: 140px;
+            margin: 10px auto 10px auto;
+        }
     }
 }
 
