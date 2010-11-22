@@ -112,16 +112,36 @@ header {
 
 .youtube_screenshot {
     margin: 20px auto 30px auto;
-
-    img {
-        -moz-box-shadow: 0px 0px 8px #555; 
-        -webkit-box-shadow: 0px 0px 8px #555; 
-        box-shadow: 0px 0px 8px #555;
-        margin-bottom: 5px;
-    }
+    width: 693px;
+    position: relative;
+    left: 55px;
     
-    p {
-        color: #1668A5;
+    a {
+        float: left;
+        background: transparent;
+        padding: 0;
+        position: relative;
+        top: 77px;
+        
+        :hover {
+            background: transparent;
+        }
+    }
+
+    div {
+        float: left;
+        margin-right: 25px;
+        
+        img.screenshot {
+            -moz-box-shadow: 0px 0px 8px #555; 
+            -webkit-box-shadow: 0px 0px 8px #555; 
+            box-shadow: 0px 0px 8px #555;
+            margin-bottom: 5px;
+        }
+
+        p {
+            color: #1668A5;
+        }
     }
 }
 

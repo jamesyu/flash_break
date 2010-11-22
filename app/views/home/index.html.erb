@@ -1,8 +1,11 @@
 <h3>Flash Ads are breaking web interfaces. Like this:</h3>
 
-<div class="youtube_screenshot">
-    <%= image_tag 'youtube_screenshot.gif' %>
-    <p>Actual screenshot from YouTube.</p>
+<div class="youtube_screenshot clearfix">
+    <div>
+        <%= image_tag 'youtube_screenshot.gif', :class => 'screenshot' %>
+        <p>Actual screenshot from YouTube.</p>
+    </div>
+    <%= link_to image_tag('more_examples.png'), screenshots_url %>
 </div>
 
 <div class="section clearfix">
