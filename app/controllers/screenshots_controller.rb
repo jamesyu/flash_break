@@ -9,6 +9,10 @@ class ScreenshotsController < ApplicationController
     @screenshot = Screenshot.create params[:screenshot]
   end
   
+  def new
+    @screenshot = Screenshot.new
+  end
+  
   def admin
     @screenshots = Screenshot.unapproved.all
   end

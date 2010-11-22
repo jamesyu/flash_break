@@ -31,7 +31,7 @@ ActionController::Routing::Routes.draw do |map|
   #   end
 
   map.root :controller => "home"
-  map.resources :screenshots, :only => [ :create, :destroy ], :member => { :approve => :post }, :collection => { :admin => :get }
+  map.resources :screenshots, :only => [ :create, :destroy, :new ], :member => { :approve => :post }, :collection => { :admin => :get }
 
   # See how all your routes lay out with "rake routes"
 

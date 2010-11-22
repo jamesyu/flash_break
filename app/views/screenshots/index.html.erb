@@ -1,4 +1,5 @@
 <div class="wrap">
+    <a class="upload_link" href="<%= new_screenshot_url %>">Upload Your Sighting</a>
     <h3 class="center">Screenshots of Broken Flash Ads</h1>
     <% unless @screenshots.empty? %>
         <%= render :partial => 'screenshots', :locals => { :screenshots => @screenshots, :show_admin => false } %>
